@@ -1,0 +1,40 @@
+
+
+.game-area{
+  background-color: red;
+  border: 20px;
+  height: 500px;
+  width:100%;
+}
+
+.game-description{
+  border-color:green;
+  left:0;
+  top:0;
+  text-indent: 0rem;
+  background: #ffc;
+  padding: 10px, 20px;
+  margin: 20px,20px;
+}
+
+.game-random{
+  text-align: center;
+  font-size: 5rem;
+  margin:0 0;
+  height: 100%;
+  padding: 100px;
+  border: 10px solid black;
+}
+.game-timer{
+  text-align: center;
+  margin:0 0;
+  height: 100%;
+  width: 100%;
+  border: 10px solid green;
+}
+
+.game-operation{
+  opacity: 0.5;
+  text-align: center;
+  padding: 50px;
+}

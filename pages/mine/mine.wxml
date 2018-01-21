@@ -1,0 +1,9 @@
+<view class="container">
+  <image src="{{avatar}}" class="avatar">
+  </image>
+  <view class="section">
+    <view class='nick'>{{nick}}</view>
+    <view class='description'> {{country}} {{province}}</view>
+
+  </view>
+</view>

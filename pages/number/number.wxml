@@ -1,0 +1,26 @@
+<view class='container'>
+
+
+  <view class='game-area'>
+    <view class='' bindtap='beginGame'>
+      <view class='game-description'>
+        规则说明: 在指定时间内记忆给出的随机数序列,然后输入给出答案,错一个不得分,全部正确100分.
+      </view>
+    </view>
+    <view bindtap='beginGame'>
+      <view wx:if='{{second > 1}}'>
+        <view class="game-random">{{randomNum}}</view>
+        <view class="game-timer">{{second}}s</view>
+        <view class='game-operation'>tap to change number</view>
+      </view>
+    </view>
+
+
+
+  </view>
+
+
+
+
+
+</view>

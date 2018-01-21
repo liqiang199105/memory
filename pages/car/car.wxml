@@ -1,0 +1,21 @@
+<view class="container">
+    <image src="{{userInfo.avatarUrl}}" class="avatar">
+    </image>
+    <view class="section">
+      <view class='nick'>{{userInfo.nickName}}</view>
+    </view>
+    <view> 
+          当前排名 : 1      总分数: 100
+    </view>
+
+    <view class="selection">
+    <view class='selectionLeft'>
+    <navigator url="/pages/car/car_learn" hover-class="navigator-hover">去学习</navigator>
+    </view>
+      <view class='selectionRight'>
+       <navigator url="/pages/car/car_challenge" hover-class="navigator-hover">去刷分</navigator>
+      </view>
+
+      
+    </view>
+</view>

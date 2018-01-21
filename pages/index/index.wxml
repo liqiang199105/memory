@@ -1,0 +1,12 @@
+<view class="container">
+
+  <view class="news-item-container">
+    <block wx:for="{{memories}}" wx:for-index="id" wx:for-item="memory">
+      <navigator url="../{{memory.id}}/{{memory.id}}">
+        <view class="news-item">
+          <text class="news-item-title">{{memory.key}}</text>
+        </view>
+      </navigator>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,45 @@
+<view class="container">
+
+  <!-- 游戏前: 游戏难度选择 -->
+  <block wx:if='{{step == 1}}'>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        当前选择：{{array[index]}}
+      </view>
+
+      <button bindtap='beginGame' data-index='{{index}}'>开始游戏</button>
+    </picker>
+  </block>
+  <!-- 游戏中: 记忆操作以及布局 -->
+  <block wx:elif='{{step == 2}}'>
+    <view class="top_section">
+      <progress percent="20" stroke-width="12" color="pink" active/>
+
+<view animation="{{animationData}}" style="background:red;height:300rpx;width:300rpx">凯迪拉克</view>
+
+    </view>
+
+    <view class='center_section'>
+      <movable-area style="height: 100%;width: 100%;background: red;">
+        <movable-view style="height: 50px; width: 50px; background: blue;" x="{{x}}" y="{{y}}" direction="all">
+          奥迪
+        </movable-view>
+        <movable-view style="height: 50px; width: 50px; background: blue;" x="{{x}}" y="{{y + 50}}" direction="all">
+          大众
+        </movable-view>
+        <movable-view style="height: 50px; width: 50px; background: blue;" x="{{x}}" y="{{y + 100}}" direction="all">
+          奔驰
+        </movable-view>
+      </movable-area>
+      <view class="btn-area">
+        <button size="mini" bindtap="tap">click me to move to (30px, 30px)</button>
+
+        <button>提交</button>
+
+      </view>
+    </view>
+
+    <view class='bottom_section'>
+    </view>
+  </block>
+</view>
